@@ -1,0 +1,30 @@
+[2024-12-08 01:42:42,308][__main__][INFO] - 
+model:
+  optimizer:
+    _target_: torch.optim.Adam
+    lr: 0.0001
+  name: correlation3_unscaled
+  _target_: models.correlation3_unscaled.TrackerNetC
+  patch_size: 31
+  feature_dim: 384
+  representation: time_surfaces_v2_5
+gt_path: /student/tahmad8/Videos/deep_ev_tracker/gt_tracks/
+running_locally: false
+weights_path: /student/tahmad8/Videos/deep_ev_tracker/pretrained_weights/weights_finetuned_ec.ckpt
+track_name: shitomasi_custom
+representation: time_surfaces_v2_5
+patch_size: 31
+visualize: true
+dt_track_vis: 0.2
+trainer:
+  gpus:
+  - 0
+
+[2024-12-08 01:43:27,967][__main__][INFO] - === DATASET: space_simulated ===
+[2024-12-08 01:43:27,967][__main__][INFO] - Latency: 8.015701532363892 s
+[2024-12-08 01:43:27,968][__main__][INFO] - 
++-------------------+
+|   Inference Time  |
++-------------------+
+| 8.015701532363892 |
++-------------------+
